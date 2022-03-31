@@ -1,0 +1,59 @@
+@import "./styles/variables";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-200;
+
+  .container {
+    width: 80vw;
+    height: 80vh;
+    background-color: $white;
+    background-image: url("./image/cesar.gif");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    box-shadow: $box-shadow-300;
+    h1 {
+      color: $burgundy-200;
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: "Henny Penny", cursive;
+      letter-spacing: 0.5rem;
+      text-shadow: 3px 3px 5px $gray-200;
+      text-transform: uppercase;
+    }
+    &-cypher {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 1120px) {
+  .App {
+    .container {
+      height: 90vh;
+      &-cypher {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 464px) {
+  .App {
+    .container {
+      width: 100vw;
+      height: 100vh;
+      h1 {
+        font-size: 1.5rem;
+      }
+      &-cypher {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

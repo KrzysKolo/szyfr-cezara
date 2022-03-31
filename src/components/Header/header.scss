@@ -1,0 +1,110 @@
+@import "./../../styles/variables";
+@import "./../../styles/mixins";
+
+.wrapper-header {
+  width: 38%;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  color: $gray-300;
+  display: flex;
+  flex-direction: column;
+  &__password,
+  &__step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    input {
+      @include setInput;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 1.5rem 3rem;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .wrapper-header {
+    width: 100%;
+    margin-left: 0;
+    &__password,
+    &__step {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      label {
+        margin-bottom: 0.5rem;
+      }
+      input {
+        @include setInputMedium;
+      }
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.5rem 3rem;
+      height: 6rem;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .wrapper-header {
+    width: 100%;
+    margin-left: 0;
+    &__password,
+    &__step {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      label {
+        margin-bottom: 0.5rem;
+      }
+      input {
+        @include setInputMedium;
+      }
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.5rem 3rem;
+      height: 6rem;
+    }
+  }
+}
+@media screen and (max-width: 464px) {
+  .wrapper-header {
+    width: 100%;
+    margin-left: 0;
+    &__password,
+    &__step {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      label {
+        margin-bottom: 0.5rem;
+      }
+      input {
+        @include setInputSmall;
+      }
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.5rem 3rem;
+      height: 6rem;
+    }
+  }
+}

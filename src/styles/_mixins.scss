@@ -1,0 +1,59 @@
+@mixin setInput(
+  $margin-left: 0.5rem,
+  $font-size: 0.9rem,
+  $border-radius: 10px,
+  $padding: 5px 10px,
+  $box-shadow: inset 2px -2px 3px $gray-100,
+  $border: 1px solid $gray-100,
+  $color: $burgundy-200,
+  $outline: none,
+  $font-weight: 700
+) {
+  margin-left: $margin-left;
+  font-size: $font-size;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+  box-shadow: $box-shadow;
+  color: $color;
+  outline: $outline;
+  font-weight: $font-weight;
+}
+@mixin setInputSmall(
+  $font-size: 1.2rem,
+  $border-radius: 10px,
+  $padding: 5px 10px,
+  $box-shadow: inset 2px -2px 3px $gray-100,
+  $border: 1px solid $gray-100,
+  $color: $burgundy-200,
+  $outline: none,
+  $font-weight: 700
+) {
+  font-size: $font-size;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+  box-shadow: $box-shadow;
+  color: $color;
+  outline: $outline;
+  font-weight: $font-weight;
+}
+@mixin setInputMedium(
+  $font-size: 1.6rem,
+  $border-radius: 10px,
+  $padding: 5px 10px,
+  $box-shadow: inset 2px -2px 3px $gray-100,
+  $border: 1px solid $gray-100,
+  $color: $burgundy-200,
+  $outline: none,
+  $font-weight: 700
+) {
+  font-size: $font-size;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+  box-shadow: $box-shadow;
+  color: $color;
+  outline: $outline;
+  font-weight: $font-weight;
+}
